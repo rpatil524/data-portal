@@ -44,7 +44,7 @@
   margin-bottom: 16px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
 }
 
 .discovery-header__stats-container {
@@ -104,6 +104,7 @@
 .discovery-header__dropdown-tags-container {
   flex: 3 1 60%;
   height: 90%;
+  margin-top: 15px;
 }
 
 .discovery-header__tags-header {
@@ -640,4 +641,16 @@
 .discovery-filters-control-button {
   color: var(--g3-color__base-blue);
   border-color: var(--g3-color__base-blue);
+}
+
+/* Media Queries */
+@media (max-width: 1080px) {
+  .discovery-modal__header-buttons,
+  .discovery-modal__header-buttons > .ant-space {
+    display: block;
+  }
+
+  .discovery-modal__header-buttons > div.ant-space-horizontal > span.ant-space-item-split {
+    display: none;
+  }
 }
